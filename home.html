@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d021102c53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header section start  -->
+    <header>
+        <nav class=" bg-orange-100">
+            <div class="navbar container mx-auto px-4 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+
+                        </ul>
+                    </div>
+                    <a href="index.html" id="blog" class="btn btn-ghost text-xl font-semibold bg-[#B4F461]">Home</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <div class="flex justify-center items-center gap-x-4 text-[#111111]">
+                            <div>
+                                <img src="assets/logo.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+                <div class=" flex items-center gap-x-3 navbar-end">
+                    <div>
+                        <img src="assets/coin.png" alt="">
+                    </div>
+                    <div>
+                        <p id="mainbalance" class="text-xl font-medium text-[#111111B3]">5500</p>
+                    </div>
+                    <div>
+                        <p class="text-xl font-medium text-[#111111B3]">BDT</p>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- header section end -->
+    <!-- main section start -->
+    <main>
+        <section class="container mx-auto px-4 mt-9">
+            <h1 class="text-5xl font-extrabold">Importent FAQ <i class="fa-solid fa-question"></i></h1>
+        </section>
+
+        <!-- FAQ SECTION START  -->
+         <section class="container mx-auto px-4 my-9">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">what is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p class=" font-medium">Document Object Model is a hierarchical representation of HTML documents . It defines the structure and properties of elements on a webpage , enabling JavaScript to dynamically access, manipulate, and update content, enhancing interactivity and functionality.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mt-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an slement from the DOM ?</div>
+                <div class="collapse-content">
+                  <p class=" font-medium">document.getElementById('id')</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mt-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM , and why is it useful ?</div>
+                <div class="collapse-content">
+                  <p class=" font-medium">Event delegation is a technique in the DOM where a single event listener is added to a parent element instead of adding multiple event listeners to individual child elements . The parent element listens for events that occur on its children using event bubbling. When events propagate from the target element up through its ancestors.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 mt-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM ?</div>
+                <div class="collapse-content">
+                  <p class=" font-medium">let link = document.querySelector('id')
+                    let items = link.getAttribute('item');
+                    console.log(items);
+                  </p>
+                </div>
+              </div>
+         </section>
+        <!-- FAQ SECTION END  -->
+
+
+    </main>
+    <script src="utilitis.js"></script>
+    <script src="index.js"></script>
+    <!-- main section end -->
+
+
+</body>
+
+</html>

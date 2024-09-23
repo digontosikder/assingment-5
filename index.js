@@ -21,12 +21,14 @@ document.getElementById('noakhali-btn').addEventListener('click',function(event)
     const finalAmmount =mainBalance- noakhaliInput;
     document.getElementById('mainbalance').innerText = finalAmmount;
 
+    alert('You Have Donated for Humankind')
+
 
 
     const div = document.createElement('div');
     div.innerHTML = `
-  <div class= "p-8 border rounded-lg">
-  <p class = "text-xl font-bold ">${noakhaliInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+  <div class= "p-8 border rounded-lg mt-4">
+  <p class = "text-xl font-bold ">${noakhaliInput} Taka is Donated for famine-2024 at Naokhali, Bangladesh</p>
   <p class = "font-light">${time()} (Bangladesh Standard Time)</p>
             
         </div>
@@ -58,11 +60,12 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
     const finalAmmount =mainBalance- feniInput;
     document.getElementById('mainbalance').innerText = finalAmmount;
+    alert('You Have Donated for Humankind')
 
 
     const div = document.createElement('div');
     div.innerHTML = `
-  <div class= "p-8 border rounded-lg my-6">
+  <div class= "p-8 border rounded-lg mt-4">
   <p class = "text-xl font-bold ">${feniInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
   <p class = "font-light">${time()} (Bangladesh Standard Time)</p>
             
@@ -77,7 +80,8 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
 
 // Quata section
-document.getElementById('quota-btn').addEventListener('click', function(){
+document.getElementById('quota-btn').addEventListener('click', function(event){
+    event.preventDefault();
     const quotaInput = inputValue('quota-input');
     const quotaTaka = textFildValue('quota-balance');
     const mainBalance = textFildValue('mainbalance');
@@ -94,11 +98,12 @@ document.getElementById('quota-btn').addEventListener('click', function(){
     document.getElementById('quota-balance').innerText =quotabalance;
     const finalAmmounts = mainBalance - quotaInput;
     document.getElementById('mainbalance').innerText=finalAmmounts;
+    alert('You Have Donated for Humankind')
 
     const div = document.createElement('div');
     div.innerHTML = `
-  <div class= "p-8 border rounded-lg ">
-  <p class = "text-xl font-bold ">${quotaInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+  <div class= "p-8 border rounded-lg mt-4">
+  <p class = "text-xl font-bold ">${quotaInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
   <p class = "font-light">${time()} (Bangladesh Standard Time)</p>
             
         </div>
@@ -140,3 +145,8 @@ document.getElementById('donation-btn').addEventListener('click', function(){
 
 
 // main buttons section Donation 
+
+
+
+
+

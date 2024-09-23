@@ -62,7 +62,7 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
     const div = document.createElement('div');
     div.innerHTML = `
-  <div class= "p-8 border rounded-lg">
+  <div class= "p-8 border rounded-lg my-6">
   <p class = "text-xl font-bold ">${feniInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
   <p class = "font-light">${time()} (Bangladesh Standard Time)</p>
             
@@ -97,7 +97,7 @@ document.getElementById('quota-btn').addEventListener('click', function(){
 
     const div = document.createElement('div');
     div.innerHTML = `
-  <div class= "p-8 border rounded-lg">
+  <div class= "p-8 border rounded-lg ">
   <p class = "text-xl font-bold ">${quotaInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
   <p class = "font-light">${time()} (Bangladesh Standard Time)</p>
             

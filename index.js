@@ -35,6 +35,7 @@ document.getElementById('noakhali-btn').addEventListener('click',function(event)
         
   `
   document.getElementById('history-section').appendChild(div);
+  my_modal_5.showModal()
     
     
     
@@ -51,7 +52,7 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
     }
     if(0>=feniInput || mainBalance < feniInput ){
         alert("invalid input")
-        return
+        return;
 
     }
     
@@ -73,6 +74,8 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
         
   `
   document.getElementById('history-section').appendChild(div);
+
+  my_modal_5.showModal()
     
     
     
@@ -98,6 +101,8 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
     document.getElementById('quota-balance').innerText =quotabalance;
     const finalAmmounts = mainBalance - quotaInput;
     document.getElementById('mainbalance').innerText=finalAmmounts;
+
+   
    
 
     const div = document.createElement('div');
@@ -110,6 +115,7 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
         
   `
   document.getElementById('history-section').appendChild(div);
+  my_modal_5.showModal()
 
 })
 
@@ -145,6 +151,14 @@ document.getElementById('donation-btn').addEventListener('click', function(){
 
 
 // main buttons section Donation 
+
+
+//  Modal making
+
+
+
+
+
 
 
 

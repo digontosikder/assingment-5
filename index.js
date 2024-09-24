@@ -21,7 +21,7 @@ document.getElementById('noakhali-btn').addEventListener('click',function(event)
     const finalAmmount =mainBalance- noakhaliInput;
     document.getElementById('mainbalance').innerText = finalAmmount;
 
-    alert('You Have Donated for Humankind')
+    
 
 
 
@@ -60,7 +60,7 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
 
     const finalAmmount =mainBalance- feniInput;
     document.getElementById('mainbalance').innerText = finalAmmount;
-    alert('You Have Donated for Humankind')
+    
 
 
     const div = document.createElement('div');
@@ -98,7 +98,7 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
     document.getElementById('quota-balance').innerText =quotabalance;
     const finalAmmounts = mainBalance - quotaInput;
     document.getElementById('mainbalance').innerText=finalAmmounts;
-    alert('You Have Donated for Humankind')
+   
 
     const div = document.createElement('div');
     div.innerHTML = `

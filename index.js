@@ -34,6 +34,12 @@ document.getElementById('noakhali-btn').addEventListener('click',function(event)
         </div>
         
   `
+ const modal = document.getElementById('modal-taka');
+ modal.innerHTML = `
+ <p class ="text-2xl font-bold">${noakhaliInput}</p>
+ 
+ `
+
   document.getElementById('history-section').appendChild(div);
   my_modal_5.showModal()
     
@@ -76,6 +82,11 @@ document.getElementById('feni-btn').addEventListener('click',function(event){
   document.getElementById('history-section').appendChild(div);
 
   my_modal_5.showModal()
+  const modal = document.getElementById('modal-taka');
+ modal.innerHTML = `
+ <p class ="text-2xl font-bold">${feniInput}</p>
+ 
+ `
     
     
     
@@ -116,6 +127,11 @@ document.getElementById('quota-btn').addEventListener('click', function(event){
   `
   document.getElementById('history-section').appendChild(div);
   my_modal_5.showModal()
+  const modal = document.getElementById('modal-taka');
+ modal.innerHTML = `
+ <p class ="text-2xl font-bold">${quotaInput}</p>
+ 
+ `
 
 })
 
